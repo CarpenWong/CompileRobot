@@ -1,0 +1,136 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+   <link href = "img/Style.css" type="text/css" rel="stylesheet" />
+    <title>无标题页</title>
+    <style type="text/css">
+        .style1
+        {
+            height: 54px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <!--WebPart控件-->
+    <asp:WebPartManager ID="WebPartManager1" runat="server">
+    </asp:WebPartManager>
+    
+      <!--导航处设置-->
+       <table width="778" border="0" cellpadding="0" cellspacing="6" class ="border">
+        <tr>
+             <td width="256" bgcolor="#CCFFFF" class="style1">
+                <asp:Image ID="Image1" runat="server" ImageUrl="~/img/Robot.png" />
+                </td>
+            <td width="504" valign="top" class="style1" >
+              <table width="100%" border="0" cellpadding="0" cellspacing="0">
+               <tr valign="top">
+                <td>
+                      <table width="100%" border="0" cellpadding="0" cellspacing="6" class="navDark">
+                            <tr>
+                                <td align="center">
+                                        <asp:LinkButton ID="lnkbtnDefault" runat="server" ForeColor="White" PostBackUrl="~/FirstPage.aspx"
+                                            CausesValidation="False" Font-Size="Large">首页</asp:LinkButton>
+                               </td>
+                            </tr>
+                       </table>
+            </td>
+             <td width="6">
+                            <img height="6" src="img/spacer.gif" width="6" alt="" />
+                        </td>
+                        <td>
+                         <table width="100%" border="0" cellpadding="0" cellspacing="6" class="navDark">
+                                <tr>
+                                    <td align="center">
+                                        <asp:LinkButton ID="lnkbtnLogin" runat="server" ForeColor="White" CausesValidation="False" 
+                                        PostBackUrl="~/User_Login.aspx" Font-Size="Large">登录</asp:LinkButton>
+                                   </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td width="6">
+                            <img height="6" src="img/spacer.gif" width="6" alt="" />
+                        </td>
+                        <td>
+                            <table width="100%" border="0" cellpadding="0" cellspacing="6" class="navDark">
+                                <tr>
+                                    <td align="center">
+                                        <asp:LinkButton ID="lnkbtnRegister" runat="server" ForeColor="White" PostBackUrl="~/User_Register.aspx"
+                                            CausesValidation="False" Font-Size="Large">注册</asp:LinkButton>
+                                    </td>
+                                </tr>
+                            </table>
+                            </td>
+                            <td width="6">
+                            <img height="6" src="img/spacer.gif" width="6" alt="" />
+                            </td>
+                        <td>
+                            <table width="100%" border="0" cellpadding="0" cellspacing="6" class="navDark">
+                                <tr>
+                                    <td align="center">
+                                        <asp:LinkButton ID="lnkbtnHelp" runat="server" ForeColor="White" PostBackUrl="~/User_Help.aspx"
+                                            CausesValidation="False" Font-Size="Large">帮助</asp:LinkButton>
+                                    </td>
+                                </tr>
+                            </table>
+                            </td>
+                            </tr>
+                      </table>
+                   </td>
+              </tr>
+       </table>
+     
+    
+    <table class="border" cellspacing="6" cellpadding="0" width="778" border="0">
+        <tr>
+            <td width="227" valign="top" bgcolor="#f2f3f7">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </td>
+            <td width="533" valign="top" bgcolor="#f2f3f7">
+                <table cellspacing="0" cellpadding="0" width="100%" border="0">
+                    <tr>
+                        <td>
+                            <table cellspacing="0" cellpadding="6" width="100%" border="0">
+                         
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="#FFFFFF" height="6">
+                        </td>
+                    </tr>
+                </table>
+                <table width="100%" border="0" cellspacing="6" cellpadding="0">
+                    <tr>
+                        <td>
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                              
+                                  
+                          </asp:ContentPlaceHolder>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    
+     <table width="100%" border="0" cellpadding="0" cellspacing="0" class="navLight">
+                    <tr>
+                        <td height="42">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="2">
+                                <tr>
+                                    <td>
+                                        Copyright 2011 Program
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+    </form>
+</body>
+</html>

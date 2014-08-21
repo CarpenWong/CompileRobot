@@ -1,0 +1,7 @@
+人物状态图片已经全部导入，并且已经都转换成影片剪辑down,left,right,up
+继续。。。。。实现了每一个动作的影片剪辑GoDown,GoUp,GoLeft,GoRight
+继续。。。。。实现了每一个原地走动作的影片剪辑GoNotDown,GoNotUp,GoNotLeft,GoNotRight
+继续。。。。。实现了上面8个动作影片剪辑的类Go[down|up|left|right]和GoNot[down|up|left|right].
+继续。。。。。实现了机器人的上下左右走的动作，并且每个动作之间可以转换，同时实现了边缘检测,
+              有一个bug就是，键盘的一直按下动作响应有问题.
+继续。。。。。游戏已经基本完成，已经实现了棋子和机器人的碰撞检测和翻转棋子.

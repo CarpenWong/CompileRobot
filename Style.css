@@ -1,0 +1,66 @@
+﻿BODY {
+	FONT-SIZE: 12px; MARGIN: 0px; BACKGROUND-COLOR: #616378; TEXT-ALIGN: center
+}
+TD {
+	FONT-SIZE: 12px
+}
+TD.content {
+	FONT-SIZE: 14px; COLOR: #000000; LINE-HEIGHT: 140%
+}
+TD.content A:link {
+	TEXT-DECORATION: underline
+}
+TD.list {
+	LINE-HEIGHT: 148%
+}
+HR {
+	COLOR: #000000; HEIGHT: 1px
+}
+TEXTAREA {
+	FONT-SIZE: 12px; FONT-FAMILY: "Tahoma", "MS Shell Dlg"
+}
+A:link {
+	COLOR: #333366; TEXT-DECORATION: none
+}
+A:active {
+	COLOR: #333366; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #333366; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #ff0000; TEXT-DECORATION: underline
+}
+A.navLink:link {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+A.navLink:visited {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+A.navLink:hover {
+	COLOR: #ffffff; TEXT-DECORATION: underline
+}
+.navLight {
+	COLOR: #ffffff; BACKGROUND-COLOR: #666688
+}
+.navDark {
+	BACKGROUND-COLOR: #8c8ea3;
+	height: 52px;
+}
+.border {
+	MARGIN: auto; BACKGROUND-COLOR: #ffffff;text-align:left
+}
+SELECT {
+	FONT-SIZE: 12px; FONT-FAMILY: "MS Shell Dlg"
+}
+FORM {
+	MARGIN-TOP: 3px; FONT-SIZE: 12px; MARGIN-BOTTOM: 0px; FONT-FAMILY: "Tahoma", "MS Shell Dlg"
+}
+INPUT {
+	FONT-SIZE: 12px; FONT-FAMILY: "Tahoma", "MS Shell Dlg"
+}
+ .modalbg{
+    background-color:Gray;
+    filter:alpha(opacity=70);
+    opacity:0.7;
+ }

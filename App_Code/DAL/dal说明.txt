@@ -1,0 +1,28 @@
+﻿Player_Info表对应的Player_InfoTableAdapter中的函数说明：
+
+GetPlayerID(string Player_ID)
+用于判断玩家注册时所输入的玩家ID（玩家昵称）是否已经存在，如果存在玩家注册不成功；
+不存在则进行玩家后面的注册信息的判断
+
+CheckPlayerAndPasswd(string Player_ID,string Player_Password)
+用于检测玩家登陆时玩家ID（玩家昵称）与密码是否匹配
+
+GetPlayerRoundInfoByID(string Player_ID)
+作用是根据玩家ID取出玩家的闯关信息，取出的信息是用于显示在当前页面中，供当前玩家查看自己现在
+已经闯过的关数和现在所处的关是第几关；
+
+RegisterPlayerInfo(string Player_ID,string Player_Passwd,string Player_Score,string Player_Round)
+将玩家的注册的成功信息写入数据库
+
+Game_Info表对应的Game_InfoTableAdapter中的函数说明：
+GetGameInfoByRound(string Game_Round)
+根据游戏的关卡，然后读取出每一关的详细信息，程序根据所读取出的砖块，冰块的位置以及人物的初始位置信息，
+来生成每一关
+InsertGameInfo(string Game_Round,string Row,string Columns,string Brick_Pos,string Ice_Pos,string Player_Pos)
+向数据库中插入每一关的信息，包括每一关的网格的行列数，冰块、砖块的位置以及各个人物的初始化位置
+
+Manager_Info表对应的Manager_InfoTableAdapter中的函数的说明
+GetManagerInfoByManagerID(string Manager_ID,string Manager_Passwd)
+用于判断是否是管理员用户的信息
+
+
